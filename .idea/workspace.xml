@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fedc49df-3b88-4520-915b-7c9950eff557" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/hust/web/servlet/BaseServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/hust/web/servlet/StoryServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.4.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-01-03" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-01-03" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/hust/web/servlet/BaseServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/hust/web/servlet/StoryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/jquery-3.4.1.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +89,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.NLPApplication">
     <configuration name="nlp [tomcat7:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -121,6 +115,24 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="NLPApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="nlp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.hust.nlp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.hust.nlp.NLPApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.NLPApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -147,22 +159,38 @@
       <workItem from="1577949570357" duration="5485000" />
       <workItem from="1577955089330" duration="6231000" />
       <workItem from="1578967694591" duration="1000" />
-      <workItem from="1582009801577" duration="2032000" />
+      <workItem from="1582009801577" duration="2600000" />
     </task>
+    <task id="LOCAL-00001" summary="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置">
+      <created>1582011996674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582011996674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="421" y="140" key="CommitChangelistDialog2" timestamp="1582011996431">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="421" y="140" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582011996431" />
     <state x="683" y="175" key="SettingsEditor" timestamp="1582010896573">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="683" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1582010896573" />
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582011828805">
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582012042849">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582011828805" />
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582012042849" />
   </component>
   <component name="masterDetails">
     <states>
