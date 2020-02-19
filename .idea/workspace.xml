@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fedc49df-3b88-4520-915b-7c9950eff557" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/entity/Collection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/entity/Suggestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/hust/web/servlet/BaseServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/hust/web/servlet/StoryServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/jquery-3.4.1.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +64,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -159,7 +160,8 @@
       <workItem from="1577949570357" duration="5485000" />
       <workItem from="1577955089330" duration="6231000" />
       <workItem from="1578967694591" duration="1000" />
-      <workItem from="1582009801577" duration="2600000" />
+      <workItem from="1582009801577" duration="3565000" />
+      <workItem from="1582097071451" duration="1790000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置">
       <created>1582011996674</created>
@@ -168,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582011996674</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置">
+      <created>1582012653555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582012653555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,18 +188,50 @@
     <option name="LAST_COMMIT_MESSAGE" value="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="140" key="CommitChangelistDialog2" timestamp="1582011996431">
+    <state x="421" y="140" key="CommitChangelistDialog2" timestamp="1582103036038">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="421" y="140" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582011996431" />
+    <state x="421" y="140" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582103036038" />
+    <state width="798" height="119" key="GridCell.Tab.0.bottom" timestamp="1582013511267">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="119" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582013511267" />
+    <state width="798" height="119" key="GridCell.Tab.0.center" timestamp="1582013511267">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="119" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582013511267" />
+    <state width="798" height="119" key="GridCell.Tab.0.left" timestamp="1582013511267">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="119" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582013511267" />
+    <state width="798" height="119" key="GridCell.Tab.0.right" timestamp="1582013511267">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="119" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582013511267" />
+    <state width="798" height="119" key="GridCell.Tab.1.bottom" timestamp="1582013511268">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="119" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582013511268" />
+    <state width="798" height="119" key="GridCell.Tab.1.center" timestamp="1582013511268">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="119" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582013511268" />
+    <state width="798" height="119" key="GridCell.Tab.1.left" timestamp="1582013511267">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="119" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582013511267" />
+    <state width="798" height="119" key="GridCell.Tab.1.right" timestamp="1582013511268">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="119" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582013511268" />
     <state x="683" y="175" key="SettingsEditor" timestamp="1582010896573">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="683" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1582010896573" />
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582012042849">
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582012680779">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582012042849" />
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582012680779" />
   </component>
   <component name="masterDetails">
     <states>
