@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fedc49df-3b88-4520-915b-7c9950eff557" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/entity/Collection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/entity/Suggestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -57,7 +56,9 @@
     <servers />
   </component>
   <component name="ProjectId" id="1XyEBXdCoMs5yym6Uj3W5IrukHN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -161,7 +162,8 @@
       <workItem from="1577955089330" duration="6231000" />
       <workItem from="1578967694591" duration="1000" />
       <workItem from="1582009801577" duration="3565000" />
-      <workItem from="1582097071451" duration="1790000" />
+      <workItem from="1582097071451" duration="2034000" />
+      <workItem from="1582184097951" duration="2931000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置">
       <created>1582011996674</created>
@@ -177,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582012653555</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="实体类">
+      <created>1582103104973</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582103104973</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,13 +194,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置" />
+    <MESSAGE value="实体类" />
+    <option name="LAST_COMMIT_MESSAGE" value="实体类" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="140" key="CommitChangelistDialog2" timestamp="1582103036038">
+    <state x="421" y="140" key="CommitChangelistDialog2" timestamp="1582103104784">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="421" y="140" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582103036038" />
+    <state x="421" y="140" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582103104784" />
     <state width="798" height="119" key="GridCell.Tab.0.bottom" timestamp="1582013511267">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -228,10 +238,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="683" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1582010896573" />
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582012680779">
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582103126770">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582012680779" />
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582103126770" />
   </component>
   <component name="masterDetails">
     <states>
