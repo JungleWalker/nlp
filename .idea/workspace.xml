@@ -23,6 +23,7 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -163,7 +164,8 @@
       <workItem from="1578967694591" duration="1000" />
       <workItem from="1582009801577" duration="3565000" />
       <workItem from="1582097071451" duration="2034000" />
-      <workItem from="1582184097951" duration="2931000" />
+      <workItem from="1582184097951" duration="3190000" />
+      <workItem from="1582269646238" duration="2086000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置">
       <created>1582011996674</created>
@@ -186,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582103104973</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Service层">
+      <created>1582187662956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582187662956</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,13 +204,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置" />
     <MESSAGE value="实体类" />
-    <option name="LAST_COMMIT_MESSAGE" value="实体类" />
+    <MESSAGE value="Service层" />
+    <option name="LAST_COMMIT_MESSAGE" value="Service层" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="140" key="CommitChangelistDialog2" timestamp="1582103104784">
+    <state x="1073" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1582270312935">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="421" y="140" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582103104784" />
+    <state x="1073" y="232" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1582270312935" />
+    <state x="421" y="140" key="CommitChangelistDialog2" timestamp="1582273127141">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="421" y="140" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582273127141" />
     <state width="798" height="119" key="GridCell.Tab.0.bottom" timestamp="1582013511267">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -238,10 +252,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="683" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1582010896573" />
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582103126770">
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582187676483">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582103126770" />
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582187676483" />
   </component>
   <component name="masterDetails">
     <states>
