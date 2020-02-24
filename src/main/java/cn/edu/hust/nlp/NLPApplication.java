@@ -4,7 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@MapperScan("com.hust.travel.mapper")
+@MapperScan("cn.edu.hust.nlp.mapper")
 @SpringBootApplication
 public class NLPApplication {
 
@@ -12,3 +12,4 @@ public class NLPApplication {
         SpringApplication.run(NLPApplication.class, args);
     }
 }
+
