@@ -5,6 +5,7 @@ public enum ResultTypeEnum {
     SERVICE_SUCCESS(200, "success"),
     PARAM_ERROR(40001, "param error"),
     NULL_RESULT(40002, "null result"),
+    EXIST_RESULT(40003, "exist result"),
     NOT_FOUND(404, "not found"),
     SERVICE_ERROR(500, "server error");
 

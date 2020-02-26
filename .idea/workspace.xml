@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fedc49df-3b88-4520-915b-7c9950eff557" name="Default Changelist" comment="">
+    <list default="true" id="fedc49df-3b88-4520-915b-7c9950eff557" name="Default Changelist" comment="UserController.register">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/NLPApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/NLPApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/vo/ResultTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/hust/nlp/vo/ResultTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/hust/nlp/NLPApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/edu/hust/nlp/NLPApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +182,7 @@
       <workItem from="1582184097951" duration="3190000" />
       <workItem from="1582269646238" duration="2241000" />
       <workItem from="1582443406166" duration="1278000" />
-      <workItem from="1582529773397" duration="4222000" />
+      <workItem from="1582529773397" duration="7619000" />
     </task>
     <task id="LOCAL-00001" summary="使用Spring Boot框架&#10;文件目录修改&#10;依赖修改&#10;添加application.yml配置">
       <created>1582011996674</created>
@@ -226,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582456380540</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UserController.register">
+      <created>1582539244011</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582539244011</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,17 +245,18 @@
     <MESSAGE value="Service层" />
     <MESSAGE value="数据传输类" />
     <MESSAGE value="MybatisPlus配置类&#10;controller类（只创建）" />
-    <option name="LAST_COMMIT_MESSAGE" value="MybatisPlus配置类&#10;controller类（只创建）" />
+    <MESSAGE value="UserController.register" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserController.register" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1073" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1582270312935">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="1073" y="232" key="#com.intellij.ide.util.MemberChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1582270312935" />
-    <state x="608" y="148" key="CommitChangelistDialog2" timestamp="1582456380264">
+    <state x="608" y="148" key="CommitChangelistDialog2" timestamp="1582539243606">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="608" y="148" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582456380264" />
+    <state x="608" y="148" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1582539243606" />
     <state width="798" height="312" key="GridCell.Tab.0.bottom" timestamp="1582539162787">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -285,10 +293,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="683" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1582010896573" />
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582456410528">
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1582539257524">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582456410528" />
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1582539257524" />
   </component>
   <component name="masterDetails">
     <states>
