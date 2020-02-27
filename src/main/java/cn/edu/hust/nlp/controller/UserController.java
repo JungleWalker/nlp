@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
-
 /**
  * <p>
  *     前端控制器
@@ -38,8 +37,9 @@ public class UserController {
         user.setSex(sex);
 
         boolean isSuccess = userService.save(user);
+        if (isSuccess) return Result.success();
+        else return Result.error(ResultTypeEnum.SERVICE_ERROR);
 
-        return Result.success(isSuccess);
     }
 
     @ResponseBody
