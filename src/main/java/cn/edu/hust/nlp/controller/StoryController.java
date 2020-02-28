@@ -42,13 +42,22 @@ public class StoryController {
 
         boolean isSuccess = storyService.save(story);
         if (isSuccess) return Result.success();
-        else return Result.error(ResultTypeEnum.SERVICE_ERROR);
+        else return Result.error();
 
     }
 
     @ResponseBody
-    @GetMapping("list")
-    public Result list(@RequestParam(value = "uid") Integer uid, @RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "rows", defaultValue = "5") Integer rows) {
+    @GetMapping("getOne")
+    public Result getOne(Integer id) {
+        Story story = storyService.getById(id);
+
+        if (story != null) return Result.success(story);
+        else return Result.error(ResultTypeEnum.NULL_RESULT);
+    }
+
+    @ResponseBody
+    @GetMapping("myList")
+    public Result myList(@RequestParam(value = "uid") Integer uid, @RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "rows", defaultValue = "5") Integer rows) {
         QueryWrapper<Story> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("uid", uid);
         IPage<Story> iPage = new Page<>(page, rows);
@@ -56,5 +65,13 @@ public class StoryController {
 
         if (storyList == null || storyList.size() == 0) return Result.error(ResultTypeEnum.NULL_RESULT);
         else return Result.success(storyList);
+    }
+
+    @ResponseBody
+    @RequestMapping("delete")
+    public Result delete(@RequestParam(value = "id") Integer id) {
+        boolean isSuccess = storyService.removeById(id);
+        if (isSuccess) return Result.success();
+        else return Result.error();
     }
 }

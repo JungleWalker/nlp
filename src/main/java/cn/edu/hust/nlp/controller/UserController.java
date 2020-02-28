@@ -38,7 +38,7 @@ public class UserController {
 
         boolean isSuccess = userService.save(user);
         if (isSuccess) return Result.success();
-        else return Result.error(ResultTypeEnum.SERVICE_ERROR);
+        else return Result.error();
 
     }
 
