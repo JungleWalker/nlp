@@ -55,6 +55,13 @@ public class StoryController {
         else return Result.error(ResultTypeEnum.NULL_RESULT);
     }
 
+    /**
+     * 根据用户id分页查询故事
+     * @param uid
+     * @param page
+     * @param rows
+     * @return
+     */
     @ResponseBody
     @GetMapping("myList")
     public Result myList(@RequestParam(value = "uid") Integer uid, @RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "rows", defaultValue = "5") Integer rows) {
@@ -67,8 +74,60 @@ public class StoryController {
         else return Result.success(storyList);
     }
 
+    /**
+     * 根据用户id分页查询用户公布的故事
+     * @param uid
+     * @param page
+     * @param rows
+     * @return
+     */
     @ResponseBody
-    @RequestMapping("delete")
+    @GetMapping("myPublik")
+    public Result myPublik(@RequestParam(value = "uid") Integer uid, @RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "rows", defaultValue = "5") Integer rows) {
+        QueryWrapper<Story> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("uid", uid).eq("publik", true);
+        IPage<Story> iPage = new Page<>(page, rows);
+        List<Story> storyList = storyService.page(iPage, queryWrapper).getRecords();
+
+        if (storyList == null || storyList.size() == 0) return Result.error(ResultTypeEnum.NULL_RESULT);
+        else return Result.success(storyList);
+    }
+
+    /**
+     * 按分类；点赞，收藏，时间；查询所有公布的故事
+     * @param type
+     * @param sort
+     * @param page
+     * @param rows
+     * @return
+     */
+    @ResponseBody
+    @GetMapping("list")
+    public Result list(@RequestParam(value = "type", required = false) String type, @RequestParam(value = "sort", defaultValue = "acclaim") String sort, @RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "size", defaultValue = "5") Integer rows) {
+        QueryWrapper<Story> queryWrapper = new QueryWrapper<>();
+        if (type != null) queryWrapper.eq("type", type);
+        queryWrapper.eq("publik", true);
+        queryWrapper.orderByDesc(sort);
+        IPage<Story> iPage = new Page<>(page, rows);
+        List<Story> storyList = storyService.page(iPage, queryWrapper).getRecords();
+
+        if (storyList == null || storyList.size() == 0) return Result.error(ResultTypeEnum.NULL_RESULT);
+        else return Result.success(storyList);
+    }
+
+    @ResponseBody
+    @GetMapping("acclaim")
+    public Result acclaim(@RequestParam(value = "id") Integer id) {
+        Story story = storyService.getById(id);
+        if (story == null) return Result.error(ResultTypeEnum.NULL_RESULT);
+        story.setAcclaim(story.getAcclaim() + 1);
+        boolean isSuccess = storyService.updateById(story);
+        if (isSuccess) return Result.success();
+        else return Result.error(ResultTypeEnum.SERVICE_ERROR);
+    }
+
+    @ResponseBody
+    @GetMapping("delete")
     public Result delete(@RequestParam(value = "id") Integer id) {
         boolean isSuccess = storyService.removeById(id);
         if (isSuccess) return Result.success();

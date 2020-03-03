@@ -40,4 +40,15 @@ public class UserControllerTest {
                 .andReturn();
         System.out.println(mvcResult.getResponse().getContentAsString());
     }
+
+    @Test
+    public void personality() throws Exception{
+        MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get("/user/personality")
+                .param("id", "2").param("personality", "true me")
+                .accept(MediaType.parseMediaType("application/json;charset=UTF-8")))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType("application/json;charset=UTF-8"))
+                .andReturn();
+        System.out.println(mvcResult.getResponse().getContentAsString());
+    }
 }

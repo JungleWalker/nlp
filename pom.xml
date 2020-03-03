@@ -14,7 +14,7 @@
     <groupId>cn.edu.hust</groupId>
     <artifactId>nlp</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>nlp</name>
     <description>nlp project for Spring Boot</description>
 

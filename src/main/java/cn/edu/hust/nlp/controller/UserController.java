@@ -25,7 +25,7 @@ public class UserController {
 
     @ResponseBody
     @GetMapping("register")
-    public Result register(@RequestParam(value = "username") String username, @RequestParam(value = "password") String password, @RequestParam(value = "sex") Character sex) {
+    public Result register(@RequestParam(value = "username") String username, @RequestParam(value = "password") String password, @RequestParam(value = "sex") Character sex, @RequestParam(value = "personality") String personality) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("username", username);
         User one = userService.getOne(queryWrapper);
@@ -35,6 +35,7 @@ public class UserController {
         user.setUsername(username);
         user.setPassword(password);
         user.setSex(sex);
+        user.setPassword(personality);
 
         boolean isSuccess = userService.save(user);
         if (isSuccess) return Result.success();
@@ -51,12 +52,24 @@ public class UserController {
         if (user == null) return Result.error(ResultTypeEnum.NULL_RESULT);
         else {
             session.setAttribute("user", user);
-            return Result.success();
+            return Result.success(user);
         }
     }
 
+    @ResponseBody
+    @GetMapping("logout")
     public Result logout(HttpSession session) {
         session.removeAttribute("user");
         return Result.success();
+    }
+
+    @ResponseBody
+    @GetMapping("personality")
+    public Result personality(@RequestParam(value = "id") Integer id, @RequestParam(value = "personality", defaultValue = "") String personality) {
+        User user = userService.getById(id);
+        user.setPersonality(personality);
+        boolean isSuccess = userService.updateById(user);
+        if (isSuccess) return Result.success();
+        else return Result.error(ResultTypeEnum.SERVICE_ERROR);
     }
 }

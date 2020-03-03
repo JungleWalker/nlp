@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [03/Jan/2020:09:47:32 +0800] "GET /nlp/ HTTP/1.1" 200 1211 http-bio-80-exec-1 27
-0:0:0:0:0:0:0:1 - - [03/Jan/2020:09:47:40 +0800] "GET /nlp/ HTTP/1.1" 200 1211 http-bio-80-exec-2 1
-0:0:0:0:0:0:0:1 - - [03/Jan/2020:09:47:49 +0800] "POST /nlp/story/storyBuild HTTP/1.1" 200 2624 http-bio-80-exec-3 121
-0:0:0:0:0:0:0:1 - - [03/Jan/2020:10:26:19 +0800] "GET /nlp/ HTTP/1.1" 200 1211 http-bio-80-exec-5 1
-0:0:0:0:0:0:0:1 - - [03/Jan/2020:10:26:21 +0800] "POST /nlp/story/storyBuild HTTP/1.1" 200 2624 http-bio-80-exec-6 1

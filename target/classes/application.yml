@@ -1,6 +1,0 @@
-spring:
-  datasource:
-    drive-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/nlp
-    username: root
-    password: root

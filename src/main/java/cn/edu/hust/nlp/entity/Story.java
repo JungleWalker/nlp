@@ -47,4 +47,14 @@ public class Story {
      * 是否公开
      */
     private Boolean publik;
+
+    /**
+     * 点赞数
+     */
+    private Integer acclaim;
+
+    /**
+     * 收藏数
+     */
+    private Integer collections;
 }
