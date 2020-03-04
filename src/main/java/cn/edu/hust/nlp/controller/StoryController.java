@@ -39,6 +39,8 @@ public class StoryController {
         story.setDate(new Date());
         story.setType(type);
         story.setPublik(publik);
+        story.setAcclaim(0);
+        story.setCollections(0);
 
         boolean isSuccess = storyService.save(story);
         if (isSuccess) return Result.success();
@@ -103,7 +105,7 @@ public class StoryController {
      */
     @ResponseBody
     @GetMapping("list")
-    public Result list(@RequestParam(value = "type", required = false) String type, @RequestParam(value = "sort", defaultValue = "acclaim") String sort, @RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "size", defaultValue = "5") Integer rows) {
+    public Result list(@RequestParam(value = "type", required = false) String type, @RequestParam(value = "sort", defaultValue = "acclaim") String sort, @RequestParam(value = "page", defaultValue = "1") Integer page, @RequestParam(value = "rows", defaultValue = "5") Integer rows) {
         QueryWrapper<Story> queryWrapper = new QueryWrapper<>();
         if (type != null) queryWrapper.eq("type", type);
         queryWrapper.eq("publik", true);
@@ -113,17 +115,6 @@ public class StoryController {
 
         if (storyList == null || storyList.size() == 0) return Result.error(ResultTypeEnum.NULL_RESULT);
         else return Result.success(storyList);
-    }
-
-    @ResponseBody
-    @GetMapping("acclaim")
-    public Result acclaim(@RequestParam(value = "id") Integer id) {
-        Story story = storyService.getById(id);
-        if (story == null) return Result.error(ResultTypeEnum.NULL_RESULT);
-        story.setAcclaim(story.getAcclaim() + 1);
-        boolean isSuccess = storyService.updateById(story);
-        if (isSuccess) return Result.success();
-        else return Result.error(ResultTypeEnum.SERVICE_ERROR);
     }
 
     @ResponseBody

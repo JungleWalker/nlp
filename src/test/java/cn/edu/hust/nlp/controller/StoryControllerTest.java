@@ -44,4 +44,19 @@ public class StoryControllerTest {
                 .andReturn();
         System.out.println(mvcResult.getResponse().getContentAsString());
     }
+
+    @Test
+    public void list() throws Exception{
+        MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get("/story/list")
+                .param("uid", "2")
+                .param("title", "hello world")
+                .param("text", "The day was warm, and there was no shade; out of the olive woods which they had left behind, and where all was soft coolness and freshness, they had emerged into a piece of road widened and perfected by recent improvements till it was as shelterless as a broad street.")
+                .param("type", "fairy")
+                .param("publik", "true")
+                .accept(MediaType.parseMediaType("application/json;charset=UTF-8")))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType("application/json;charset=UTF-8"))
+                .andReturn();
+        System.out.println(mvcResult.getResponse().getContentAsString());
+    }
 }
